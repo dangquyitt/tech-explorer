@@ -6,4 +6,8 @@ server:
 
 .PHONY: mock
 mock:
-	docker run --rm -v ${MAKE_FILE_DIR}:/src -w /src vektra/mockery:v2 --all
+	docker run --rm -v ${MAKE_FILE_DIR}:/src -w /src vektra/mockery:v2
+
+.PHONY: test
+test:
+	go test ./...

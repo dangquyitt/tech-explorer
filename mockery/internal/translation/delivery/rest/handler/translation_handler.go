@@ -7,7 +7,7 @@ import (
 )
 
 type translationHandler struct {
-	usecase domain.TranslationUseCase
+	usecase domain.TranslationUsecase
 }
 
 type translateRequest struct {

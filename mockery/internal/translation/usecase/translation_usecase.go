@@ -35,7 +35,7 @@ func (uc *translationUsecase) Translate(ctx context.Context, orgText string, sou
 	return translation, nil
 }
 
-func NewTranslationUsecase(repository domain.TranslationRepository, translationWebAPI domain.TranslationWebAPI) domain.TranslationUseCase {
+func NewTranslationUsecase(repository domain.TranslationRepository, translationWebAPI domain.TranslationWebAPI) domain.TranslationUsecase {
 	return &translationUsecase{
 		repository:        repository,
 		translationWebAPI: translationWebAPI,

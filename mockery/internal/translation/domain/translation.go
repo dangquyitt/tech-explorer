@@ -9,7 +9,7 @@ type Translation struct {
 	Translation string `json:"translation"`
 }
 
-type TranslationUseCase interface {
+type TranslationUsecase interface {
 	Translate(ctx context.Context, orgText, source, dest string) (*Translation, error)
 	FetchHistories(ctx context.Context) ([]Translation, error)
 }
